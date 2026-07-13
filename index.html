@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Plug UG</title>
+
+    <!-- Tabler Icons -->
+
+    <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+    
+
+<div class="wrap" id="root">
+
+    <!-- =========================
+         Banner
+    ========================== -->
+<div class="banner">
+
+    <img src="images/banner.png" class="banner-image" alt="Smart Plug UG Banner">
+
+    <div class="banner-overlay"></div>
+
+    <div class="banner-content">
+    <button
+        class="tiktok-button"
+        onclick="window.open('https://www.tiktok.com/@smart_plug_ug', '_blank')">
+        Follow us on TikTok 🔥
+    </button>
+</div>
+</div>
+   
+   
+     <!-- ======================
+        categories
+    ======================= -->
+<div class="categories">
+
+    <div class="category" data-target="Phones">
+        <img src="images/phone.jpg" alt="Phones">
+        <span>Phones</span>
+    </div>
+
+    <div class="category" data-target="Smartwatches">
+        <img src="images/smartwatch.jpg" alt="Smartwatches">
+        <span>Smartwatches</span>
+    </div>
+
+    <div class="category" data-target="Tablets">
+        <img src="images/tablet.jpg" alt="Tablets">
+        <span>Tablets</span>
+    </div>
+
+    <div class="category" data-target="Accessories">
+        <img src="images/accessories.jpg" alt="Accessories">
+        <span>Accessories</span>
+    </div>
+
+    <div class="category" data-target="Speakers">
+        <img src="images/headphones.jpg" alt="Speakers">
+        <span>Speakers</span>
+    </div>
+
+</div>
+
+<!-- ======================
+        Search
+    ======================= -->
+
+<div class="search-panel">
+    <input
+        type="search"
+        id="searchInput"
+        placeholder="Search phones, tablets, accessories...">
+    <button id="searchClear" type="button" aria-label="Clear search">&times;</button>
+</div>
+
+<!-- ======================
+        Phone Brands
+    ======================= -->
+
+<div id="phoneBrands" class="phone-brands">
+
+    <div class="phone-brand" data-brand="iPhone">
+        <img src="images/iphone.jpg" alt="iPhone">
+        <span>iPhone</span>
+    </div>
+
+    <div class="phone-brand" data-brand="Samsung">
+        <img src="images/samsung.jpg" alt="Samsung">
+        <span>Samsung</span>
+    </div>
+
+    <div class="phone-brand" data-brand="Tecno">
+        <img src="images/tecno.jpg" alt="Tecno">
+        <span>Tecno</span>
+    </div>
+
+    <div class="phone-brand" data-brand="Huawei">
+        <img src="images/huawei.jpg" alt="Huawei">
+        <span>Huawei</span>
+    </div>
+
+    <div class="phone-brand" data-brand="Google Pixel">
+        <img src="images/google pixel.jpg" alt="Google Pixel">
+        <span>Google Pixel</span>
+    </div>
+
+    <div class="phone-brand" data-brand="Others">
+        <img src="images/others.jpg" alt="Others">
+        <span>Others</span>
+    </div>
+
+</div>
+
+<!-- ======================
+        products
+    ======================= -->
+
+
+<h2 id="catlabel" class="section-title">Products</h2>
+
+<div id="products"></div>
+
+<button id="checkoutCta" class="go-to-cart-btn" type="button" hidden>
+    <span class="go-to-cart-btn__inner">
+        <span class="go-to-cart-btn__icon" id="checkoutCtaIcon" aria-hidden="true">🛒</span>
+        <span id="checkoutCtaText">Proceed to Order</span>
+        <span class="go-to-cart-btn__chevron" id="checkoutCtaChevron" aria-hidden="true">→</span>
+    </span>
+</button>
+
+   
+    <!-- ======================
+        Shopping Cart
+    ======================= -->
+
+    <div id="cartbox">
+
+        <h3 class="cart-title">
+
+            Shopping Cart
+
+        </h3>
+
+        <div id="cartitems">
+
+        </div>
+
+        <div class="cart-total-row">
+
+            <span>Total</span>
+
+            <span id="carttotal">
+
+                UGX 0
+
+            </span>
+
+        </div>
+
+
+        <!-- ======================
+        Delivery Details
+    ======================= -->
+
+        <div class="details-section">
+
+            <label>
+
+                Delivery Details
+
+            </label>
+
+            <input
+                id="custname"
+                type="text"
+                placeholder="Full Name">
+
+            <input
+                id="custphone"
+                type="text"
+                placeholder="Phone Number">
+
+            <input
+                id="custlocation"
+                type="text"
+                placeholder="Delivery Address">
+
+        </div>
+
+
+        <div id="orderresult">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ======================
+     JavaScript Files
+====================== -->
+
+<script src="js/data.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/order.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
